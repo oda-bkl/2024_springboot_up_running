@@ -1,0 +1,45 @@
+### GET request to example server
+GET localhost:8080/coffees
+
+### GET single coffee
+GET localhost:8080/coffees/30459a8f-edca-45d8-bbab-d56e8aa85228
+
+### POST
+POST localhost:8080/coffees
+Content-Type: application/json
+
+{
+    "name": "Chocochino",
+    "id": "9999"
+}
+
+### UPDATE / PUT existing entry
+PUT localhost:8080/coffees/9999
+Content-Type: application/json
+
+{
+    "name": "Chocochino deLuxe",
+    "id": "9999"
+}
+
+### UPDATE / PUT new entry
+PUT localhost:8080/coffees/1234
+Content-Type: application/json
+
+{
+    "name": "Mötöröl Cappuccino",
+    "id": "1234"
+}
+
+### DELETE
+DELETE localhost:8080/coffees/9999
+
+### Greeting
+GET localhost:8080/greeting
+
+### Greeting with name
+GET localhost:8080/greeting/coffee
+
+### Droid
+GET localhost:8080/droid
+
